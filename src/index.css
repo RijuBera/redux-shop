@@ -1,13 +1,54 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.full{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+justify-content: space-between;
+align-items: center;
+
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  min-height: 200px;
+  flex-wrap: wrap;
+  border: 2px solid rgb(134, 120, 120);
+  border-radius: 10px;
+margin: 5px;
+font-size: 12px;
+gap: 5px;
+box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.product:hover{
+ scale:1.1;
+  transition: all 0.3s ease-in;
+  box-shadow:0 4px 8px 0 rgba(129, 67, 67, 0.2),0 6px 20px 0 rgba(75, 7, 7, 0.19)
+}
+
+.icon{
+  padding:1px;
+  position: absolute;
+  color: white;
+  top:-4px;
+  left: 19px;
+  background-color: greenyellow;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  padding-left: 2px;
+  text-align: center;
+}
+.l{
+  display: grid;
+grid-template-columns: repeat(3,minmax(0,1fr));
+gap: 5px;
+
 }
